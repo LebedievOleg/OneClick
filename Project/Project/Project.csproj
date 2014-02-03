@@ -367,6 +367,7 @@
     <Content Include="js\jquery.flexslider-min.js" />
     <Content Include="js\jquery.formalize.min.js" />
     <Content Include="js\jquery.masonry.min.js" />
+    <Content Include="js\jquery.js" />
     <Content Include="js\jquery.prettyPhoto.js" />
     <Content Include="js\jquery164min.js" />
     <Content Include="js\respond-min.js" />

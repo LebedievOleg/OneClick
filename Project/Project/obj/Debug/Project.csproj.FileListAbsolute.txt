@@ -80,6 +80,6 @@ C:\Users\OWNER\Desktop\Project\Project\bin\ko\System.Spatial.resources.dll
 C:\Users\OWNER\Desktop\Project\Project\bin\ru\System.Spatial.resources.dll
 C:\Users\OWNER\Desktop\Project\Project\bin\zh-Hans\System.Spatial.resources.dll
 C:\Users\OWNER\Desktop\Project\Project\bin\zh-Hant\System.Spatial.resources.dll
-C:\Users\OWNER\Desktop\Project\Project\obj\Debug\Project.csprojResolveAssemblyReference.cache
 C:\Users\OWNER\Desktop\Project\Project\obj\Debug\Project.dll
 C:\Users\OWNER\Desktop\Project\Project\obj\Debug\Project.pdb
+C:\Users\OWNER\Desktop\Project\Project\obj\Debug\Project.csprojResolveAssemblyReference.cache
