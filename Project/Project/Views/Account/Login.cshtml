@@ -3,46 +3,55 @@
 @{
     ViewBag.Title = "Log in";
 }
+<div class="wrapper">
+ 	<div class="grids top">
+        <div class="grid-16 grid intro">
+            <h2>@ViewBag.Title.</h2><h3>Use a local account to log in.</h3>
+            @using (Html.BeginForm(new { ReturnUrl = ViewBag.ReturnUrl })) {
+            @Html.AntiForgeryToken()
+            @Html.ValidationSummary(true)
 
-<hgroup class="title">
-    <h1>@ViewBag.Title.</h1>
-</hgroup>
+            <fieldset>
+                <legend>Log in Form</legend>
+                <ul>
+                    <li>
+                        @Html.LabelFor(m => m.UserName)
+                        @Html.TextBoxFor(m => m.UserName)
+                        @Html.ValidationMessageFor(m => m.UserName)
+                    </li>
+                    <li>
+                        @Html.LabelFor(m => m.Password)
+                        @Html.PasswordFor(m => m.Password)
+                        @Html.ValidationMessageFor(m => m.Password)
+                    </li>
+                    <li>
+                        @Html.CheckBoxFor(m => m.RememberMe)
+                        @Html.LabelFor(m => m.RememberMe, new { @class = "checkbox" })
+                    </li>
+                    <li><label>&nbsp;</label><input type="submit" value="Log in" /></li>
+                </ul>
+                
+            </fieldset>
+            <p>
+                @Html.ActionLink("Register", "Register") if you don't have an account.
+            </p>
+        }
+        </div>
+        <div class="grid-16 grid intro">
+            <h2>Use another service to log in.</h2>
+            @Html.Action("ExternalLoginsList", new { ReturnUrl = ViewBag.ReturnUrl })
+        </div>
+     </div>
+</div>
+
 
 <section id="loginForm">
-<h2>Use a local account to log in.</h2>
-@using (Html.BeginForm(new { ReturnUrl = ViewBag.ReturnUrl })) {
-    @Html.AntiForgeryToken()
-    @Html.ValidationSummary(true)
 
-    <fieldset>
-        <legend>Log in Form</legend>
-        <ol>
-            <li>
-                @Html.LabelFor(m => m.UserName)
-                @Html.TextBoxFor(m => m.UserName)
-                @Html.ValidationMessageFor(m => m.UserName)
-            </li>
-            <li>
-                @Html.LabelFor(m => m.Password)
-                @Html.PasswordFor(m => m.Password)
-                @Html.ValidationMessageFor(m => m.Password)
-            </li>
-            <li>
-                @Html.CheckBoxFor(m => m.RememberMe)
-                @Html.LabelFor(m => m.RememberMe, new { @class = "checkbox" })
-            </li>
-        </ol>
-        <input type="submit" value="Log in" />
-    </fieldset>
-    <p>
-        @Html.ActionLink("Register", "Register") if you don't have an account.
-    </p>
-}
+
 </section>
 
 <section class="social" id="socialLoginForm">
-    <h2>Use another service to log in.</h2>
-    @Html.Action("ExternalLoginsList", new { ReturnUrl = ViewBag.ReturnUrl })
+    
 </section>
 
 @section Scripts {

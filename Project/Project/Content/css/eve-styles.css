@@ -22,7 +22,7 @@ you´ve downloaded.
 /*------------------------------------*\
 	MAIN
 \*------------------------------------*/
-html{font-family: Arial, sans-serif;color: #888;}
+html{font-family: Arial, sans-serif;color: #000;}
 body{background:url(../../img/bg.jpg) repeat;}
 
 .social {text-align: right; position: relative;  margin: 4px 0;}
@@ -105,7 +105,7 @@ Some not-too-pretty and insemantic classes to do odd jobs.
 .left	{ float:left!important; }
 .right	{ float:right!important; }
 
-.intro {padding: 10px 0; color: #999;}
+.intro {padding: 10px 0; color: #000;}
 .intro h2 {font-size: 3em; line-height: 1em; letter-spacing: -1px; text-transform:uppercase; padding-right:15px; margin: 0 0 20px 0;}
 .intro p {font-family: 'Oswald', Arial, sans-serif; font-size: 1.9em; line-height: 1.2em; letter-spacing: -2px; padding-right: 15px;}
 
