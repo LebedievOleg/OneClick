@@ -1,4 +1,5 @@
-﻿<!DOCTYPE html>
+﻿@using Project.HtmlHelpers
+<!DOCTYPE html>
 <html lang="de"><!-- use class="debug" here if you develope a template and want to check-->
 <head>
 	<meta charset="UTF-8" />
@@ -28,8 +29,8 @@
     <script type="text/javascript">
 		$(window).load(function() {
 		$('.flexslider').flexslider({
-				animation: "slide",<!--you can also choose fade here-->
-				directionNav: false,<!--Attention: if you choose true here, the nav-buttons will also appear in the ticker! -->
+				animation: "slide",
+				directionNav: false,
 				keyboardNav: true,
 				mousewheel: true
 		});
@@ -68,10 +69,9 @@
                  
                     
                     <ul id="nav" class="main">
-                        <li><a href="/Home/Index" class="active">Home</a></li>
-                        <li><a href="/Disorder/Adhd/">ADHD</a></li>
-                		<li><a href="/Disorder/Dd">DD</a></li>
-                        <li><a href="#">Dummy 2</a></li>
+                        <li>@Html.ActionLink("Home", "Index", "Home", null, new { @class = Html.ActivePage("Home", "Index") })</li>
+                        <li>@Html.ActionLink("ADHD", "Adhd", "Disorder", null, new { @class = Html.ActivePage("Disorder", "Adhd") })</li>
+                		<li>@Html.ActionLink("DD", "Dd", "Disorder", null, new { @class = Html.ActivePage("Disorder", "Dd") })</li>
                         <li><a href="#">Dummy 3</a></li>
                         <li><a href="contact.html">Contact</a></li>
                     </ul>

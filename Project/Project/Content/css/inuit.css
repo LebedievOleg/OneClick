@@ -1210,3 +1210,68 @@ fieldset input[type="submit"]{
 fieldset input[type="submit"]:hover {
     background-color:#C7CCCC;    
 }
+#colorfulBox1 {
+    color:#fff;
+    font-size:20px;
+    font-weight:bold;
+    float:left;
+    background-color:#0072B8;
+    text-align:center;
+    height:120px;
+    display:inline-block;
+    padding:60px 60px 0 60px;
+    border-radius:5px;
+    margin:0 3% 10px 0;
+}
+#colorfulBox2 {
+    color:#fff;
+    font-size:20px;
+    font-weight:bold;
+    float:left;
+    background-color:#D8670F;
+    text-align:center;
+    height:120px;
+    padding:60px 60px 0 60px;
+    border-radius:5px;
+    display:inline-block;
+    margin:0 15px 10px 0;
+}
+#colorfulBox3 {
+    color:#fff;
+    font-size:20px;
+    font-weight:bold;
+    float:left;
+    background-color:#D61D76;
+    text-align:center;
+    display:inline-block;
+    height:120px;
+    padding:60px 60px 0 60px;
+    border-radius:5px;
+    margin:0 3% 10px 0;
+}
+#colorfulBox4 {
+    color:#fff;
+    font-size:20px;
+    font-weight:bold;
+    float:left;
+    background-color:#ACA601;
+    text-align:center;
+    height:120px;
+    padding:60px 60px 0 60px;
+    border-radius:5px;
+    display:inline-block;
+    margin:0 3% 10px 0;
+}
+#colorfulBox5 {
+    color:#fff;
+    font-size:20px;
+    font-weight:bold;
+    float:left;
+    background-color:#9235A7;
+    text-align:center;
+    height:120px;
+    padding:60px 60px 0 60px;
+    display:inline-block;
+    border-radius:5px;
+    margin:0 3% 10px 0;
+}
